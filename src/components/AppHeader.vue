@@ -43,7 +43,7 @@
 
 <template>
   <header>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-between">
 
         <!--sezione sinistra-->
