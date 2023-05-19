@@ -21,7 +21,7 @@ import AppBlueSection from './AppBlueSection.vue'
 
 <template>
     <main>
-        <div class="container-fluid bg-dark">
+        <div class="container bg-dark">
             <div class="row  text-light">
                 <p class="m-2 p-4" > -->Content here </p>
             </div>

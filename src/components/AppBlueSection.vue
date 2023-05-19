@@ -38,7 +38,7 @@
 
 <template>
 
-    <section class="container-fluid bg-primary">
+    <section class="container bg-primary">
         <div class="row text-light justify-content-center p-4">
             <template v-for="oggetto in ArraySectionBlu">
                 <section class="d-flex align-items-center col-2 p-2 hover">
