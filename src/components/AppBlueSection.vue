@@ -46,7 +46,7 @@
             <template v-for="oggetto in ArraySectionBlu">
                 <section class="d-flex align-items-center col-2 p-2 hover">
                     <img class="col-2" :src= oggetto.icon alt="icon">
-                    <p class="col">{{  oggetto.text }}</p>
+                    <p class="col mt-3">{{  oggetto.text }}</p>
                 </section>
             </template>
 
