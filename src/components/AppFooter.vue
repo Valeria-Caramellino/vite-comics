@@ -7,7 +7,6 @@
     },
     data() {
       return {
-        img:"src/assets/dc-logo-bg.png",
         ArraySectionFooter:[
             {
                 title:"DC COMICS",
@@ -19,13 +18,6 @@
                     "Games",
                     "Videos",
                     "News",
-                ]
-            },
-            {
-                title:"SHOP",
-                listFooter:[
-                    "Shop DC",
-                    "Shop DC Collectibles"
                 ]
             },
             {
@@ -54,6 +46,13 @@
                     "DC Power Visa",
                 ]
             },
+            {
+                title:"SHOP",
+                listFooter:[
+                    "Shop DC",
+                    "Shop DC Collectibles"
+                ]
+            },
         ]
       }
     },
@@ -61,7 +60,7 @@
         
     },
     mounted() {
-      console.log(this.ArraySectionFooter[0].listFooter)
+     
     }
   }
 </script>
@@ -69,43 +68,23 @@
 <template>
   <footer>
     <section class="container">
-        <div class="row text-light ">
+        <div class="row text-light align-self-stretch ">
             <div class="col-6 d-flex justify-content-around">
-                <div class="d-flex flex-column">
-                    
-                    <div>
-                        <h2 class="mt-2">{{ ArraySectionFooter[0].title}}</h2>
-                        <ul>
-                            <li class="text-secondary" v-for="oggetto in ArraySectionFooter[0].listFooter">{{ oggetto }}</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mt-2">{{ ArraySectionFooter[1].title }}</h2>
-                        <ul>
-                            <li class="text-secondary" v-for="oggetto in ArraySectionFooter[1].listFooter">{{ oggetto }}</li>
-                        </ul>
-                    </div>
+                <div class="d-flex flex-wrap">
+
+                    <!--footer maxi fatto in maniera dinamica-->
+                    <template v-for="oggetto in ArraySectionFooter">
+                        <div class="col-4">
+                            <p class="mt-2">{{ oggetto.title}}</p>
+                            <ul>
+                                <li class="text-secondary" v-for="oggetto in oggetto.listFooter">{{ oggetto }}</li>
+                            </ul>
+                        </div>
+                    </template>
                     
                 </div>
-                
-                <div>
-                    <h2 class="mt-2">{{ ArraySectionFooter[2].title }}</h2>
-                    <ul>
-                        <li class="text-secondary" v-for="oggetto in ArraySectionFooter[2].listFooter">{{ oggetto }}</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mt-2">{{ ArraySectionFooter[3].title }}</h2>
-                    <ul>
-                        <li class="text-secondary" v-for="oggetto in ArraySectionFooter[3].listFooter">{{ oggetto }}</li>
-                    </ul>
-                </div>
-                
             </div>
-        
-            <div class="col-6 d-flex justify-content-center">
-                <img :src=img alt="logo">
-            </div>
+            <div class="col-6 d-flex justify-content-center my-bg"></div>
         </div>
     </section>
     
@@ -124,9 +103,18 @@
    img{
     width: 200px;
    }
+   p{
+    cursor: pointer;
+   }
     ul{
         list-style-type: none;
         padding: 0;
         cursor: pointer;
+        font-size: 10px;
+    }
+    .my-bg{
+        background-image: url(../assets/dc-logo-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
     }
 </style>

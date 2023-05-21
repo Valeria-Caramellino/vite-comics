@@ -31,7 +31,7 @@
         
     },
     mounted() {
-      console.log("blu")
+  
     }
   }
 </script>
@@ -39,19 +39,25 @@
 <template>
 
     <section class="container bg-primary">
+
         <div class="row text-light justify-content-center p-4">
+
+            <!--sezione blu fatta in maniera dinamica-->
             <template v-for="oggetto in ArraySectionBlu">
                 <section class="d-flex align-items-center col-2 p-2 hover">
-                    <img :src= oggetto.icon alt="icon">
-                    <p>{{  oggetto.text }}</p>
+                    <img class="col-2" :src= oggetto.icon alt="icon">
+                    <p class="col">{{  oggetto.text }}</p>
                 </section>
             </template>
+
         </div>
-        
     </section>
 </template>
 
 <style scoped>
+    p{
+        font-size: 10px;
+    }
     img{
         width: 3rem;
         margin: 1rem;

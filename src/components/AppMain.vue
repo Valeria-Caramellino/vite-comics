@@ -14,16 +14,17 @@ import AppBlueSection from './AppBlueSection.vue'
         
     },
     mounted() {
-      console.log("main")
+   
     }
   }
 </script>
 
 <template>
     <main>
+      <!--container nero-->
         <div class="container bg-dark">
             <div class="row  text-light">
-                <p class="m-2 p-4" > -->Content here </p>
+                <p class="m-2 p-4" >Content here </p>
             </div>
         </div>
         
