@@ -43,7 +43,7 @@
 
 <template>
   <header>
-    <div class="container">
+    <div class="container border border-dark mt-4">
       <div class="row justify-content-between">
 
         <!--sezione sinistra-->
@@ -57,7 +57,7 @@
         <div class="col-10 d-flex justify-content-end align-items-center">
           <template v-for="oggetto in arrayHeaderSection" >
             <section class="p-2">
-              {{ oggetto.tipo }}
+              <a>{{ oggetto.tipo }}</a>
             </section>
           </template>
         </div>
@@ -73,7 +73,7 @@
     margin: 1rem;
   }
   section:hover{
-    color: blue;
+    color: blue !important;
     border-bottom: 1px solid blue;
     cursor: pointer;
   }

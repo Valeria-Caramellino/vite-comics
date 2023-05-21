@@ -41,7 +41,7 @@
     <section class="container bg-primary">
 
         <div class="row text-light justify-content-center p-4">
-
+            
             <!--sezione blu fatta in maniera dinamica-->
             <template v-for="oggetto in ArraySectionBlu">
                 <section class="d-flex align-items-center col-2 p-2 hover">
@@ -59,8 +59,7 @@
         font-size: 10px;
     }
     img{
-        width: 3rem;
-        margin: 1rem;
+        margin: 0 1rem;
     }
     section.hover:hover{
         border-bottom: 0.5px solid white;

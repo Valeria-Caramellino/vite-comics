@@ -3,23 +3,63 @@ export default{
     name: "AppMiniFooter",
     data(){
         return{
-
+            ArrayMiniFooter:[
+                {
+                    social:"src/assets/footer-facebook.png"
+                },
+                {
+                    social:"src/assets/footer-twitter.png"
+                },
+                {
+                    social:"src/assets/footer-youtube.png"
+                },
+                {
+                    social:"src/assets/footer-pinterest.png"
+                },
+                {
+                    social:"src/assets/footer-periscope.png"
+                },
+            ]
         }
     },
     methods: {
         
     },
     mounted() {
-      console.log("mini footer")
+      
     }
 }
 </script>
 
 <template>
-    ciao
+    <section class="container ">
+
+        <div class="row miniFooter justify-content-between align-items-baseline">
+            <!--parte sinistra-->
+            <div class="col-3">
+                <button class="btn-outline-primary btn btn-dark text-light m-2">SING-UP NOW!</button>
+            </div>
+            <!--parte destra-->
+            <div class="col-9 d-flex justify-content-end align-items-baseline">
+                <p class="text-primary">FOLLOWS US</p>
+                <!--dinamica con icone social-->
+                <template v-for="oggetto in ArrayMiniFooter">
+                    <div class=" mx-2"> 
+                        <img :src= oggetto.social>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+    </section>
 </template>
 
 
 <style scoped>
-
+    .miniFooter{
+        background-color: black;
+    }
+    img{
+        cursor: pointer;
+    }
 </style>

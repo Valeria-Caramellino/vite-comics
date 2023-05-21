@@ -112,6 +112,9 @@
         cursor: pointer;
         font-size: 10px;
     }
+    li:hover{
+        color: white !important;
+    }
     .my-bg{
         background-image: url(../assets/dc-logo-bg.png);
         background-position: center;
