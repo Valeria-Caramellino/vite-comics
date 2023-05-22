@@ -108,7 +108,7 @@
         cursor: pointer;
         font-size: 10px;
             :hover{
-            color: white !important;
+            color: white  !important;;
             }
         }
         .my-bg{
