@@ -37,7 +37,7 @@ export default{
         <div class="row justify-content-around align-items-baseline bg-dark">
             <!--parte sinistra-->
             <div class="col-2">
-                <button class="btn-outline-primary btn btn-dark text-light m-2">SING-UP NOW!</button>
+                <button class="btn-outline-primary btn btn-dark text-light m-2">SIGN-UP NOW!</button>
             </div>
             <!--parte destra-->
             <div class="col-6 d-flex justify-content-end align-items-baseline">

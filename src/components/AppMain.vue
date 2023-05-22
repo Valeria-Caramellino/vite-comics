@@ -31,7 +31,7 @@ import AppBlueSection from './AppBlueSection.vue'
         <div class="col-12 my-height"></div>
         <!--inizio slide titolo-->
         <div class="col-3 rounded">
-          <h4 class="m-2" >CARRENT SLIDE</h4>
+          <h4 class="m-2" >CURRENT SLIDE</h4>
         </div>
         
        
