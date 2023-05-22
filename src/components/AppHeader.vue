@@ -67,14 +67,21 @@
   </header>
 </template>
 
-<style scoped>
-  img{
-    width: 2rem;
-    margin: 1rem;
+<style lang="scss" scoped>
+  /*variabili*/
+  $blue: blue;
+  
+  header{
+    img{
+      width: 2rem;
+      margin: 1rem;
+    } 
   }
-  section:hover{
-    color: blue !important;
-    border-bottom: 1px solid blue;
-    cursor: pointer;
+  section{
+    &:hover{
+      color: $blue;
+      border-bottom: 1px solid blue;
+      cursor: pointer;
+    }
   }
 </style>
