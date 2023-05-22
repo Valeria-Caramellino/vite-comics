@@ -34,13 +34,13 @@ export default{
 <template>
     <section class="container ">
 
-        <div class="row justify-content-between align-items-baseline bg-dark">
+        <div class="row justify-content-around align-items-baseline bg-dark">
             <!--parte sinistra-->
-            <div class="col-3">
+            <div class="col-2">
                 <button class="btn-outline-primary btn btn-dark text-light m-2">SING-UP NOW!</button>
             </div>
             <!--parte destra-->
-            <div class="col-9 d-flex justify-content-end align-items-baseline">
+            <div class="col-6 d-flex justify-content-end align-items-baseline">
                 <p class="text-primary">FOLLOWS US</p>
                 <!--dinamica con icone social-->
                 <template v-for="oggetto in ArrayMiniFooter">
