@@ -94,30 +94,28 @@
   
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     section{
         background-image: url(../assets/footer-bg.jpg);
-        
         background-size: cover;
-    }
-   img{
-    width: 200px;
-   }
-   p{
-    cursor: pointer;
-   }
-    ul{
+    
+        img{    width: 200px;   }
+        p {     cursor: pointer;    }
+
+        ul{
         list-style-type: none;
         padding: 0;
         cursor: pointer;
         font-size: 10px;
-    }
-    li:hover{
-        color: white !important;
-    }
-    .my-bg{
+            :hover{
+            color: white !important;
+            }
+        }
+        .my-bg{
         background-image: url(../assets/dc-logo-bg.png);
         background-position: center;
         background-repeat: no-repeat;
+        }
     }
+    
 </style>
