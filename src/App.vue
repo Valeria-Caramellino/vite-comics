@@ -96,6 +96,10 @@
   <AppFooter/>
 </template>
 
+<style lang="scss">
+@use'../src/style/general.scss' as*;
+</style>
+
 <style scoped>
 
 </style>
