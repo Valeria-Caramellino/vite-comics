@@ -44,7 +44,7 @@
             
             <!--sezione blu fatta in maniera dinamica-->
             <template v-for="oggetto in ArraySectionBlu">
-                <section class="d-flex align-items-center col-2 p-2 hover">
+                <section class="d-flex align-items-center col-2 p-2">
                     <img class="col-2" :src= oggetto.icon alt="icon">
                     <p class="col mt-3">{{  oggetto.text }}</p>
                 </section>
@@ -54,15 +54,16 @@
     </section>
 </template>
 
-<style scoped>
-    p{
-        font-size: 10px;
+<style lang="scss" scoped>
+    section{
+        p{  font-size: 10px;    }
+        img{    margin: 0 1rem; }
+        section{
+            &:hover{
+            border-bottom: 0.5px solid white;
+            cursor: pointer;
+            }  
+        }
     }
-    img{
-        margin: 0 1rem;
-    }
-    section.hover:hover{
-        border-bottom: 0.5px solid white;
-        cursor: pointer;
-    }
+    
 </style>

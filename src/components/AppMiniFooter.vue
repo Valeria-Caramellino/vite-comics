@@ -34,7 +34,7 @@ export default{
 <template>
     <section class="container ">
 
-        <div class="row miniFooter justify-content-between align-items-baseline">
+        <div class="row justify-content-between align-items-baseline bg-dark">
             <!--parte sinistra-->
             <div class="col-3">
                 <button class="btn-outline-primary btn btn-dark text-light m-2">SING-UP NOW!</button>
@@ -55,11 +55,10 @@ export default{
 </template>
 
 
-<style scoped>
-    .miniFooter{
-        background-color: black;
-    }
-    img{
-        cursor: pointer;
+<style lang="scss" scoped>
+    div{
+        img{
+            cursor: pointer;
+        }
     }
 </style>
