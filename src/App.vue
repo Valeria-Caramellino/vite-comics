@@ -98,6 +98,7 @@
 
 <style lang="scss">
 @use'../src/style/general.scss' as*;
+@use'../style/variabili/_variables.scss' as*;
 </style>
 
 <style scoped>

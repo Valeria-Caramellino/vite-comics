@@ -68,8 +68,7 @@
 </template>
 
 <style lang="scss" scoped>
-  /*variabili*/
-  $blue: blue;
+  @use'../style/variabili/_variables.scss' as*;
   
   header{
     img{

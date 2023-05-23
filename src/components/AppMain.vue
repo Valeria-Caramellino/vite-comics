@@ -58,6 +58,7 @@ import AppBlueSection from './AppBlueSection.vue'
 </template>
 
 <style lang="scss" scoped>
+  @use'../style/variabili/_variables.scss' as*;
 
   div{
     .my-height{
@@ -67,7 +68,7 @@ import AppBlueSection from './AppBlueSection.vue'
       height: 300px;
     }
     div.col-3{
-      background-color: blue;
+      background-color: $blue;
       text-align: center;
       margin: 0.5rem auto;
 
